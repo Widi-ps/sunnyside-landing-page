@@ -6,7 +6,14 @@
           box-sizing: border-box;
 }
 
-.nav .container {
+.main {
+  background: url(images/desktop/image-header.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.main .nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,15 +25,15 @@
           justify-content: space-between;
 }
 
-.nav .container .navbar-brand {
+.main .nav .container .navbar-brand {
   width: 100%;
-  color: black;
-  font-family: 'Urbanist', serif;
+  font-family: "Urbanist", serif;
   font-weight: 900;
   font-size: 26px;
+  color: white;
 }
 
-.nav .container .navbar-nav {
+.main .nav .container .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,10 +46,20 @@
           justify-content: space-between;
 }
 
-.nav .container .navbar-nav .nav-link {
+.main .nav .container .navbar-nav .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: white;
+  font-family: "Frauces", sans-serif;
+}
+
+.main .hero h1 {
+  margin: 20px;
+}
+
+.main .hero img {
+  padding: 20px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

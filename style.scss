@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Urbanist:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Urbanist:wght@900&display=swap");
 
 * {
   margin: 0;
@@ -6,27 +6,43 @@
   box-sizing: border-box;
 }
 
-.nav {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .navbar-brand {
-      width: 100%;
-      color: black;
-      font-family: 'Urbanist', serif;
-      font-weight: 900;
-      font-size: 26px;
-    }
-
-    .navbar-nav {
+.main {
+  background: url(images/desktop/image-header.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+  .nav {
+    .container {
       display: flex;
-      flex-direction: row;
+      align-items: center;
       justify-content: space-between;
-      .nav-link {
-        align-items: center;
-        color: black;
+      .navbar-brand {
+        width: 100%;
+        font-family: "Urbanist", serif;
+        font-weight: 900;
+        font-size: 26px;
+        color: hsl(0, 0%, 100%);
       }
+
+      .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .nav-link {
+          align-items: center;
+          color: hsl(0, 0%, 100%);
+          font-family: "Frauces", sans-serif;
+        }
+      }
+    }
+  }
+  .hero{
+    h1{
+      margin: 20px;
+    }
+    img{
+      padding: 20px;
+      font-size: 20px;
     }
   }
 }
