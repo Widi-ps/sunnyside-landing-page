@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Urbanist:wght@900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-brand {
+      width: 100%;
+      color: black;
+      font-family: 'Urbanist', serif;
+      font-weight: 900;
+      font-size: 26px;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .nav-link {
+        align-items: center;
+        color: black;
+      }
+    }
+  }
+}
