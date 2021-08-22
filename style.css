@@ -9,12 +9,15 @@
 .header {
   background: url(images/desktop/image-header.jpg);
   background-size: cover;
+  background-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100vh;
   color: white;
   font-size: 18px;
 }
 
-.header .nav .container {
+.header .nav .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,9 +27,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 40px;
 }
 
-.header .nav .container .navbar-brand {
+.header .nav .container-fluid .navbar-brand {
   width: 100%;
   font-family: "Urbanist", serif;
   font-weight: 900;
@@ -34,7 +38,7 @@
   color: white;
 }
 
-.header .nav .container .navbar-nav {
+.header .nav .container-fluid .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +51,7 @@
           justify-content: space-between;
 }
 
-.header .nav .container .navbar-nav .nav-link {
+.header .nav .container-fluid .navbar-nav .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -56,7 +60,7 @@
   font-size: 16px;
 }
 
-.header .nav .container .navbar-nav .contact {
+.header .nav .container-fluid .navbar-nav .contact {
   text-transform: uppercase;
   border: 1px solid white;
   padding: 5px 20px;
@@ -64,19 +68,18 @@
   background: white;
 }
 
-.header .nav .container .navbar-nav .black {
+.header .nav .container-fluid .navbar-nav .black {
   color: #000;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
 .header .hero {
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .header .hero h1 {
-  margin-top: 20px;
-  padding: 40px 20px;
-  font-family: 'Fraunces', serif;
+  margin-top: 10px;
+  font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 60px;
   text-transform: uppercase;
@@ -85,7 +88,7 @@
 
 .header .hero .arrow {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 50%;
 }
 
@@ -101,6 +104,16 @@
   -webkit-animation: animate 2s infinite;
           animation: animate 2s infinite;
   cursor: pointer;
+}
+
+.header .hero .arrow span:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.header .hero .arrow span:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 @-webkit-keyframes animate {
@@ -133,5 +146,75 @@
     -webkit-transform: rotate(45deg) translate(20px, 20px);
             transform: rotate(45deg) translate(20px, 20px);
   }
+}
+
+.main .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .main-content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 90px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  margin: 30px auto;
+}
+
+.main .main-content .text .title {
+  font-family: "Fraunces", serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.main .main-content .text .caption {
+  color: #a7abae;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.main .main-content .text .more {
+  font-family: "Fraunces", serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.main .main-content .text .more::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: yellow;
+}
+
+.main .main-content .images {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.main .main-content .images img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
