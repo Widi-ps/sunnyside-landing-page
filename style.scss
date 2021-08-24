@@ -215,3 +215,62 @@
   }
 }
 
+
+.testi{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    .testimonial-title{
+      font-size: 18px;
+      color: hsl(210, 4%, 67%);
+      font-family: "Fraunces", serif;
+      letter-spacing: .2rem;
+    }
+    .testi-container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 3.8rem;
+      .testi-content{
+        display: flex;
+        flex-direction: column;
+        .images{
+          width: 15%;
+          height: 30%;
+          margin-bottom: 2rem;
+          img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+        .text-box{
+          text-align: center;
+          max-width: 80%;
+          .text-caption{
+            font-family: "Barlow", sans-serif;
+            font-size: 14px;
+            line-height: 1.8rem;
+            color: hsl(232, 10%, 55%)
+          }
+          .author{
+            margin-top: 4rem;
+            margin-bottom: .5rem;
+            font-weight: 700;
+            font-family: "Fraunces", serif;
+            color: hsl(212, 27%, 19%);
+          }
+          .job-author{
+            font-family: "Barlow", sans-serif;
+            font-size: 12px;
+            color: hsl(210, 4%, 67%);
+          }
+        }
+      }
+    }
+  }
+}
